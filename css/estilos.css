@@ -1,0 +1,617 @@
+*{
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: #bf8b2e;
+
+    text-align: center;
+}
+header h1{
+    width: 70%;
+    margin-left: 15%;
+    padding: 5%;
+    color: #f2ecdd;
+    font-family: "Montserrat", serif;
+}
+nav{
+    width: 100%;
+    height: 49px;
+    background-color: #0b0b0b;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 10px #f2ecdd;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 20px 15px;
+    display: none;
+    border-bottom: 1px outset #f2ecdd;
+}
+nav a.icon{
+    align-self: flex-start;
+    display: block;
+}
+.topnav.responsive a{
+    padding-left: 17%;
+    margin-right: 35%;
+    display: block;
+    background-color: #0b0b0b;
+}
+.topnav.responsive a.icon{
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+}
+nav a:hover{
+    background-color:rgba(255, 255, 255, 0.164);
+}
+main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f2ecdd;
+}
+section .titulo1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.cont{
+    width: 90%;
+    height: auto;
+    background-color: #f5cb5c;
+    margin-left: 5%;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.texto {
+    width: auto;
+    height: auto;
+    
+    padding: 30px;
+}
+.imagen{
+    width: 90%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 10%;
+    float: left;
+    text-align: center;
+}
+.imagen img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.cont2{
+    width: 90%;
+    height: auto;
+    background-color: #f5cb5c;
+    margin-left: 5%;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/*------CAJA DOS------*/
+section .caja2{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #333533;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    perspective: 800px;
+}
+.caja2 .titulo {
+    width: 1366px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    
+}
+.caja2 .ver{
+    width: 100%;
+    
+    text-align: center;
+    color: #f2ecdd;
+    
+}
+
+.caja2 .contenedor{
+    margin-top: 20px;
+    perspective: 800px;
+}
+.contenedor:hover > .carta{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.carta{
+    width: 260px;
+    height: 300px;
+    
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.frente, .atras{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frente{
+    background-color: white;
+    
+}
+.frente img{
+    width: 100%;
+    margin-top: 20px;
+}
+.atras{ 
+    background-color: white;
+    transform: rotateY(180deg);
+    gap: 5rem;
+}
+.atras h3{
+    margin: 20px;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.atras p{
+    margin: 20px;
+    
+}
+
+/*--------------------caja TRES---------------------*/
+
+section .caja3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.caja3 .titulo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.caja3 .cont1{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.caja3 .cont2{
+    width: 90%;
+    height: auto;
+    background-color: #f5cb5c;
+    padding: 30px;
+}
+.caja3 .texto {
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+}
+ .caja3 .imagen2{
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    float: left;
+    text-align: center;
+ }
+ .imagen2 img{
+    width: 90%;
+ }
+
+ /*---------------------caja CUATRO----------------------*/
+
+section .caja4{
+    width: 100%;
+    height: auto; 
+}
+.caja4 .titulo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.foto{
+    width: 80%;
+    height: 300px;
+    box-shadow: 0 0 5px 2px rgba(192, 154, 154, 0.25);
+    margin-left: 10%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.foto2{
+    width: 80%;
+    height: 300px;
+    box-shadow: 0 0 5px 2px rgba(192, 154, 154, 0.25);
+    margin-left: 10%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.foto2 .info h2{
+    margin: 0;
+    margin-bottom: 25px;
+}
+.foto2 .info{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: antiquewhite;
+    padding: 20px;
+    position: absolute;
+    top: 210px;
+    transition: .5s;
+}
+.info h2{
+    margin: 0;
+    margin-bottom: 25px;
+}
+.info{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: antiquewhite;
+    padding: 20px;
+    position: absolute;
+    top: 210px;
+    transition: .5s;
+}
+.info.responsive2{
+    top: 0;
+}
+.caja4 .boton{
+    padding: 10px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/*--------------------caja TRES---------------------*/
+/*
+section .caja3{
+    width: 1366px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.caja3 .titulo{
+    width: 1366px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.caja3 .cont{
+    width: 550px;
+    height: 260px;
+
+    margin-left: 90px;
+    margin-bottom: 70px;
+    padding: 30px;
+    display: flex;
+}
+.caja3 .cont2{
+    width: 250px;
+    height: 250px;
+    background-color: #f5cb5c;
+    padding: 30px;
+    border-radius: 25px;
+    position: absolute;
+    left: 750px;
+    top: 200px;
+    font-family: "Raleway", serif;
+}
+.caja3 .texto {
+    width: auto;
+    height: auto;
+    font-family: "Raleway", serif;
+    margin-left: 50px;
+}
+.caja3 .imagen{
+    width: 300px;
+    height: 250px;
+    background-color: cadetblue;
+}
+.caja3 .imagenR{
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 300px;
+    transition: .5s;
+}
+.caja3 .imagenR img{
+    width: 100%;
+    margin-top: 0;
+}
+.caja3 .imagenR:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*---------------------caja CUATRO----------------------*/
+/*
+section .caja4{
+    width: 1366px;
+    height: auto;
+    float: left;
+    
+}
+.caja4 .titulo{
+    width: 1366px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    
+}
+.foto{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 5px 2px rgba(192, 154, 154, 0.25);
+    margin-left: 190px;
+    margin-bottom: 30px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.info h2{
+    margin: 0;
+}
+.info{
+    width: 360px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: antiquewhite;
+    padding: 20px;
+    position: absolute;
+    top: 310px;
+    transition: .5s;
+    font-family: "Raleway", serif;
+}
+.info:hover{
+    top: 0;
+}
+
+
+/*------COMENTARIOS------*/
+
+section .comentarios{
+    width: 100%;
+    height: auto;
+}
+.comentarios .titulo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.comentarios .cont3{
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    display: flex;
+}
+.comentarios .imagenC{
+    width: 45px;
+    height: 45px;
+    margin: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+.comentarios .textoC{
+    width: 60%;
+    height: 70px;
+    margin: 5%;
+    background-color: white;
+    border-radius: 15px;
+}
+.comentarios .esc{
+    width: 50%;
+    height: 40px;
+    border-radius: 25px;
+    margin-left: 10%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.comentarios .boton{
+    width: 15%;
+    padding: 10px;
+    margin-left: 10%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 130px;
+    padding: 30px;
+    background-color: #22212a; 
+}  
+footer p {
+    color: #f2ecdd;
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+}
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+.iconos img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+}
+ 
+/*-- hoja de estilo desde 720 hasta 1023--*/
+@media screen and (min-width: 720px){
+    .imagen{
+        width: 40%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    .texto{
+        margin-left: 3%;
+    }
+    .cont{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .caja3 .cont1 {
+        justify-content: space-evenly;
+        align-items: center;
+        display: inline-block;
+    }
+    .caja3 .cont1 .imagen2{
+        width: 40%;
+        margin-left: 3%;
+    }
+    nav{
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav a {
+        display: block;
+    }
+    nav a.icon{
+        display: none;
+    }
+    .topnav.responsive a{
+        padding: 15px 20px 15px;
+        margin-right: 0;
+        display: block;
+        background-color: #0b0b0b;
+    }
+    .topnav.responsive a.icon{
+        padding-left: 0;
+        display: none;
+        top: 0;
+    }
+    nav a:hover{
+        background-color:rgba(255, 255, 255, 0.164);
+    }
+}
+
+/*-- hoja de estilo desde 1024 y + --*/
+@media screen and (min-width: 1024px){
+    .imagen{
+        width:30%;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    .cont{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .texto{
+        margin-left: 3%;
+    }
+    
+    .cont2{
+        width: 50%;
+        margin-left: 10%;
+        
+    }
+    .caja3{
+        display: flex;
+    }
+    .caja3 .cont1{
+        width: 60%;
+        display: inline;
+    }
+    .caja3 .cont1 .imagen2{
+        width: 40%;
+        margin-left: 3%;
+    }
+    .caja3 .cont1 .texto{
+        width: 63%;
+        margin-left: 20%;
+    }
+    .caja3 .cont2{
+        width: 25%;
+        margin-left: 3%;
+    }
+    .caja2 .ver{
+        display: none;
+    }
+    .caja4 .boton{
+        display: none;
+    }
+    .comentarios {
+        
+        display: block;
+    }
+    .comentarios .titulo{
+        margin-left: 45%;
+        text-align:left;
+        margin-top: 5%;
+    }
+
+
+    .foto{
+        width: 400px;
+        height: 400px;
+        margin-left: 10%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .foto2{
+        width: 400px;
+        height: 400px;
+        margin-left: 60%;
+    }
+    .info{
+        width: 400px;
+        height: 400px;
+        top: 310px;
+    }
+    .info:hover{
+        top: 0;
+    }
+    .foto2 .info{
+        width: 400px;
+        height: 400px;
+        top: 310px;
+    }
+    .foto2 .info:hover{
+        top: 0;
+    }
+}
